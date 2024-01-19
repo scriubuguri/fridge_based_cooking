@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.page-container {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Modificare la direcția flexbox la coloană */
+}
+
+.page-header__container {
+    position: relative;
+    z-index: 9;
+}
+
+.category-listing-articles {
+    margin-top: auto; /* Face ca bara de navigare să înceapă din partea de jos a containerului */
+    padding: 10px 0.5rem; /* Redus padding-ul la stânga și dreapta */
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    padding: 8px 12px; /* Redus padding-ul la sus și jos */
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #555;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
